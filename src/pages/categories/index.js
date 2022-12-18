@@ -1,7 +1,15 @@
+import {useParams} from 'react-router-dom'
+
+
 function Categories() {
 
+    const params = useParams()
+
     return (
-        <div></div>
+        <div>
+        <br/>
+        Slug: {params.slug}
+        </div>
     )
 
 }
